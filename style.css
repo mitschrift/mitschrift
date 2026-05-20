@@ -1,0 +1,220 @@
+body {
+	background-color: #F1E7C7;
+	color: #757e48;
+		font-family: "Roboto Mono", monospace;
+		font-optical-sizing: auto;
+		font-weight: normal;
+		font-style: normal;
+		font-size: 12px;
+		margin: 0;
+		padding: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+a {
+	color: #9ca764;
+}
+
+.sidebar {
+    width: 170px;
+    min-height: 100%;
+    border-right: 1px solid #9ca764;
+    padding: 2rem 2rem;
+    position: absolute;
+    overflow: auto;
+}
+
+.post-list a {
+	display: block;
+	text-decoration: none;
+}
+
+.post-list a:before {
+	content: "\00b7";
+	margin-left: -12px;
+	width: 14px;
+	display: inline-block;
+}
+
+.title {
+	font-size: 32px;
+	font-weight: bold;
+	letter-spacing: 4px;
+	font-variant: small-caps;
+}
+
+.subtitle {
+	margin-bottom: 24px;
+	font-style: italic;
+}
+
+.profile img {
+	border: 1px solid #9ca764;
+	display: inline;
+	float: left;
+	margin-bottom: 12px;
+	margin-right: 6px;
+}
+
+.profile .profile-desc {
+	display: inline;
+}
+
+.profile {
+	border: 1px solid #9ca764;
+	padding: 12px;
+	border-top: 8px solid #9ca764;
+	min-height: 60px;
+}
+
+
+.menu a {
+	border: 1px solid #9ca764;
+	text-decoration: none;
+	padding: 4px;
+	display: inline-block;
+	margin-bottom: 6px;
+}
+
+.menu a:hover {
+	font-weight: bold;
+}
+
+.sidebar a:hover {
+	text-decoration: underline;
+}
+
+iframe {
+	height: 100%;
+	width: 100%;
+	border: none;
+}
+
+.main {
+    position: absolute;
+    height: 100vh;
+    width: calc(100% - 316px);
+    margin-left: 316px;
+    box-sizing: border-box;
+}
+
+.page {
+	padding: 24px;
+	padding-right: 40vw;
+}
+
+html, body {
+    scrollbar-width: thin; 
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+h1 {
+	font-variant: small-caps;
+	border-bottom: 1px dashed;
+}
+
+.statusbox{
+	width: fit-content;
+	padding: 10px 14px;
+	border: 1px solid #757e48;
+	font-size: 14px;
+	line-height: 1.6;
+	margin-top: 10px;
+}
+
+.statusbox p{
+	margin: 0;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        border-right: none;
+        border-bottom: 1px solid #9ca764;
+        padding: 1rem;
+        overflow: visible;
+    }
+    
+    .main {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        min-height: 60vh;
+    }
+    
+    iframe {
+        height: 60vh;
+        width: 100%;
+    }
+    
+    .title {
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+    
+    .menu a {
+        display: inline-block;
+        width: 45%;
+        text-align: center;
+        margin: 2px;
+        padding: 8px;
+        box-sizing: border-box;
+    }
+    
+    .post-list {
+        max-height: 200px;
+        overflow-y: auto;
+        margin-top: 1rem;
+    }
+    
+    .post-list a {
+        font-size: 11px;
+        padding: 2px 0;
+    }
+    
+    body {
+        font-size: 11px;
+    }
+    
+    .profile img {
+        max-width: 60px;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 10px;
+    }
+    
+    .title {
+        font-size: 20px;
+    }
+
+    .sidebar{
+        height: 300px;
+        overflow-x: scroll;
+    }
+    
+    .menu a {
+        width: 100%;
+        margin: 2px 0;
+    }
+    
+    iframe {
+        height: 50vh;
+    }
+    
+    .post-list {
+        max-height: 150px;
+    }
+}
