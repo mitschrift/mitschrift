@@ -1,21 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-	<title></title>
+	<title>blog</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=0.1">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		.entry {
+			margin-bottom: 3rem;
+			padding-bottom: 2.5rem;
+			border-bottom: 1px dashed var(--border);
+		}
+
+		.entry:last-of-type {
+			border-bottom: none;
+		}
+
+		.entry-date {
+			font-size: 9px;
+			letter-spacing: 1.5px;
+			text-transform: uppercase;
+			color: var(--ink-faint);
+			margin-bottom: 6px;
+			display: block;
+		}
+
+		.entry h2 {
+			font-family: "IM Fell English", serif;
+			font-size: 18px;
+			font-weight: 400;
+			color: var(--ink);
+		}
+
+		.entry p {
+			font-size: 11px;
+			color: var(--ink-mid);
+			line-height: 1.9;
+			margin: 0 0 0.7em;
+			max-width: 520px;
+		}
+	</style>
 </head>
 
 <body class="page">
-	<h1>primera actualización</h1>
-	<i>19. Mai 2026</i>
 	
-    <p>si todo salió bien, esto fue subido hoy!</p>
+	<!---
+	<div class="entry">
+		<h2> título </h2>
+		<span class="entry-date">11. Jun 2026</span>
+		<p>texto</p>
+	</div>
+	-->
 
-    <p>todavía estoy acomodando cosas, peleando con el css y tratando que no se rompa</p>
+	<div class="entry">
+		<h2>es que este amor es azul como el mar azul</h2>
+		<span class="entry-date">11. Jun 2026</span>
+		<p>cambié los colores, ordené el css (ponele), revisité apuntes y recapaticé</p>
+		<p>estoy intentando preparar inorgánica para julio</p>
+	</div>
 
-    <p>la verdad no sé muy bien qué escribir acá, me da un poco de vergüenza.</p>
-    <p>principalmente van a haber actualizaciones de la página, sobre la cursada y los finales</p>
-	<br>
+	<div class="entry">
+		<h2>primera actualización</h2>
+		<span class="entry-date">19. Mai 2026</span>
+		<p>si todo salió bien, esto fue subido hoy!</p>
+		<p>todavía estoy acomodando cosas, peleando con el css y tratando que no se rompa.</p>
+		<p>la verdad no sé qué escribir acá, me da un poco de vergüenza. principalmente van a haber actualizaciones de la página, sobre la cursada y los finales.</p>
+	</div>
+
 </body>
 </html>
