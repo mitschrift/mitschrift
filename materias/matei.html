@@ -1,23 +1,112 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-	<title>calculo</title>
+	<title>matemática i</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=0.1">
-
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style>
-	td {
-    padding: 6px 12px;
-    vertical-align: top;
-	}
+		.drive-wrapper {
+			border: 1px solid var(--border);
+			margin-top: 8px;
+			overflow: hidden;
+			background: rgba(255,255,255,0.3);
+		}
+
+		.drive-wrapper iframe {
+			display: block;
+			width: 100%;
+			height: 700px;
+			border: none;
+		}
+
+		.section-label {
+			font-size: 8.5px;
+			text-transform: uppercase;
+			letter-spacing: 1.8px;
+			color: var(--ink-light);
+			display: block;
+			margin-bottom: 6px;
+			margin-top: 1.4rem;
+		}
+
+		.nota {
+			font-size: 10.5px;
+			font-style: italic;
+			color: var(--ink-light);
+			border-left: 2px solid var(--border);
+			padding: 6px 10px;
+			margin: 0.8rem 0;
+		}
+
+		.callout {
+			border: 1px solid var(--border);
+			border-left: 2px solid var(--accent);
+			background: rgba(255,255,255,0.3);
+			padding: 10px 14px;
+			font-size: 10.5px;
+			color: var(--ink-mid);
+			line-height: 1.8;
+			margin: 1rem 0;
+		}
+
+		.callout b {
+			color: var(--ink);
+			font-size: 9px;
+			text-transform: uppercase;
+			letter-spacing: 1.5px;
+			display: block;
+			margin-bottom: 5px;
+			color: var(--ink-light);
+		}
+
+		.img-grid {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			gap: 6px;
+			margin-top: 10px;
+		}
+
+		.img-grid a {
+			display: block;
+			border: 1px solid var(--border);
+			overflow: hidden;
+			background: rgba(255,255,255,0.3);
+			transition: border-color 0.15s;
+		}
+
+		.img-grid a:hover {
+			border-color: var(--ink-light);
+		}
+
+		.img-grid img {
+			display: block;
+			width: 100%;
+			height: 100px;
+			object-fit: cover;
+		}
+
+		.stamp {
+			display: inline-block;
+			font-size: 8.5px;
+			letter-spacing: 1.5px;
+			text-transform: uppercase;
+			color: var(--ink-faint);
+			border: 1px solid var(--border);
+			padding: 3px 8px;
+			margin-top: 2.5rem;
+			margin-bottom: 2rem;
+			opacity: 0.8;
+		}
 	</style>
 </head>
 
 <body class="page">
+
 	<h1>Matemática I</h1>
 
-	<h2><a href="https://drive.google.com/drive/folders/1-2hK8Z_ww7yRY-uD5EQxs-MEoQc8L46f?usp=drive_link" target="_blank">drive de la materia</a></h2>
+	<h2><a href="https://drive.google.com/drive/folders/1-2hK8Z_ww7yRY-uD5EQxs-MEoQc8L46f?usp=drive_link" target="_blank">drive de la materia ↗</a></h2>
 
 	<div class="statusbox">
 		<p><b>qué hay en el drive?</b></p>
@@ -27,58 +116,57 @@
 			<li>algunos libros</li>
 		</ul>
 	</div>
-	<br>
 
-	<iframe src="https://drive.google.com/file/d/1q3I9ll4-1vYu0kDR2_iqwVlS0KB-NS9a/preview" width="50%" height="800px" ></iframe>
+	<div class="drive-wrapper">
+		<iframe src="https://drive.google.com/file/d/1q3I9ll4-1vYu0kDR2_iqwVlS0KB-NS9a/preview" allowfullscreen></iframe>
+	</div>
 
 	<h2>sobre los apuntes</h2>
 
-	<p>genuinamente no me acuerdo mucho de esta materia excepto que la pasé mal. hay un único apunte porque pude promocionarla y me salvé de rendir final.</p>
-	<p>igual dentro de todo los temas terminan siendo más llevaderos cuando hacés ejercicios seguido</p>
-	<p>sobre los <b>COLOQUIOS</b>: cuando yo cursé, la profe llamaba a los chicos del coloquio e iba haciendo preguntas de teoría. a veces preguntaba definiciones, otras veces retomaba ejercicios o cosas vistas en parciales. si alguien no sabía responder, otro podía hacerlo en su lugar.</p>
-	<p>yo solo pude participar del último coloquio. nos llamó de a 4/5 y fue preguntando temas relacionados con el parcial que habíamos rendido.</p>
+	<p>no me acuerdo mucho de esta materia. hay un único apunte porque pude promocionarla y no tuve que rendir final.</p>
+	<p>igual dentro de todo los temas terminan siendo más llevaderos cuando hacés ejercicios seguido!</p>
+	<p>mi consejo es que intentes entender los conceptos y despues el paso a paso de la operación.</p>
 
-	<p>mi consejo es que intentes entender los conceptos y después el paso a paso de la operación</p>
+	<div class="callout">
+		<b>sobre los coloquios</b>
+		cuando yo cursé, la profe llamaba a los chicos del coloquio e iba haciendo preguntas de teoría  (definiciones, ejercicios o cosas de parciales) si alguien no sabía responder, otro podía hacerlo en su lugar. nos llamó de a 4/5 y fue preguntando temas relacionados con el parcial que habíamos rendido.
+	</div>
 
 	<h2>recursos</h2>
+
+	<span class="section-label">canales de youtube</span>
 	<ul>
 		<li><a href="https://www.youtube.com/@eltraductor_ok" target="_blank">traductor de ingeniería</a></li>
 		<li><a href="https://www.youtube.com/@matematicaconjuan" target="_blank">matemáticas con juan</a></li>
 		<li><a href="https://www.youtube.com/@RicardoJara277" target="_blank">ricardo jara</a></li>
 		<li>y los clásicos: julio profe, susi profe, etc.</li>
 	</ul>
-	<br>
-	
-	<b>Libros</b>
+
+	<span class="section-label">libros</span>
 	<ul>
-		<li>cálculo, de stewart</li>
-		<li>precálculo, de stewart</li>
-		<li>cálculo de una variable, george b thomas</li>
+		<li>cálculo — stewart</li>
+		<li>precálculo — stewart</li>
+		<li>cálculo de una variable — george b. thomas</li>
 	</ul>
 
 	<h2>algunos ejercicios</h2>
-	<table>
-			<tr>
-				<td width="130"><a href="img/inecuaciones.png" target="_blank"><img src="img/inecuaciones-crop.png"></a></td>
-				<td width="130"><a href="img/matematicas.png" target="_blank"><img src="img/matematicas-crop.png"></a></td>
-				<td width="130"><a href="img/mod2_ej8.png" target="_blank"><img src="img/mod2_ej8-crop.png"></a></td>
-				<td width="130"><a href="img/mod2_ej11.png" target="_blank"><img src="img/mod2_ej11-crop.png"></a></td>
-			</tr>
-			<tr>
-				<td width="130"><a href="img/mod2_ej12.png" target="_blank"><img src="img/mod2_ej12-crop.png"></a></td>
-				<td width="130"><a href="img/mod3 2.png" target="_blank"><img src="img/mod3 2-crop.png"></a></td>
-				<td width="130"><a href="img/mod3 3.png" target="_blank"><img src="img/mod3 3-crop.png"></a></td>
-				<td width="130"><a href="img/mod3 4.png" target="_blank"><img src="img/mod3 4-crop.png"></a></td>
-			</tr>
-			<tr>
-				<td width="130"><a href="img/mod3 5.png" target="_blank"><img src="img/mod3 5-crop.png"></a></td>
-				<td width="130"><a href="img/mod3 6.png" target="_blank"><img src="img/mod3 6-crop.png"></a></td>
-				<td width="130"><a href="img/mod3.png" target="_blank"><img src="img/mod3-crop.png"></a></td>
-				<td width="130"><a href="img/mod 4.png" target="_blank"><img src="img/mod 4-crop.png"></a></td>
-			</tr>
-		</table>
 
-	<p>me encantaría saber qué significa cada imagen.</p>
-	
+	<div class="img-grid">
+		<a href="img/inecuaciones.png" target="_blank"><img src="img/inecuaciones-crop.png" alt="ejercicio"></a>
+		<a href="img/matematicas.png" target="_blank"><img src="img/matematicas-crop.png" alt="ejercicio"></a>
+		<a href="img/mod2_ej8.png" target="_blank"><img src="img/mod2_ej8-crop.png" alt="ejercicio"></a>
+		<a href="img/mod2_ej11.png" target="_blank"><img src="img/mod2_ej11-crop.png" alt="ejercicio"></a>
+		<a href="img/mod2_ej12.png" target="_blank"><img src="img/mod2_ej12-crop.png" alt="ejercicio"></a>
+		<a href="img/mod3 2.png" target="_blank"><img src="img/mod3 2-crop.png" alt="ejercicio"></a>
+		<a href="img/mod3 3.png" target="_blank"><img src="img/mod3 3-crop.png" alt="ejercicio"></a>
+		<a href="img/mod3 4.png" target="_blank"><img src="img/mod3 4-crop.png" alt="ejercicio"></a>
+		<a href="img/mod3 5.png" target="_blank"><img src="img/mod3 5-crop.png" alt="ejercicio"></a>
+		<a href="img/mod3 6.png" target="_blank"><img src="img/mod3 6-crop.png" alt="ejercicio"></a>
+		<a href="img/mod3.png" target="_blank"><img src="img/mod3-crop.png" alt="ejercicio"></a>
+		<a href="img/mod 4.png" target="_blank"><img src="img/mod 4-crop.png" alt="ejercicio"></a>
+	</div>
+	<p class="nota">me encantaría saber qué significa cada imagen.</p>
+
+
 </body>
 </html>

@@ -1,12 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-	<title>QG</title>
+	<title>química general</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=0.1">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		.section-label {
+			font-size: 8.5px;
+			text-transform: uppercase;
+			letter-spacing: 1.8px;
+			color: var(--ink-light);
+			display: block;
+			margin-bottom: 6px;
+			margin-top: 1.2rem;
+		}
+
+		.drive-wrapper {
+			border: 1px solid var(--border);
+			padding: 0;
+			margin-top: 8px;
+			overflow: hidden;
+			background: rgba(255,255,255,0.3);
+		}
+
+		.drive-wrapper iframe {
+			display: block;
+			width: 100%;
+			height: 700px;
+			border: none;
+		}
+
+		.stamp {
+			display: inline-block;
+			font-size: 8.5px;
+			letter-spacing: 1.5px;
+			text-transform: uppercase;
+			color: var(--ink-faint);
+			border: 1px solid var(--border);
+			padding: 3px 8px;
+			margin-top: 2.5rem;
+			margin-bottom: 2rem;
+			opacity: 0.8;
+		}
+
+		.tip-list {
+			padding-left: 1.2rem;
+			color: var(--ink-mid);
+		}
+
+		.tip-list li {
+			margin-bottom: 10px;
+			line-height: 1.75;
+		}
+
+		.tip-list li::marker {
+			color: var(--ink-light);
+		}
+
+		img.footer-img {
+			display: block;
+			max-width: 280px;
+			border: 1px solid var(--border);
+			margin-top: 1.5rem;
+		}
+	</style>
 </head>
 
 <body class="page">
+
 	<h1>Química General</h1>
 
 	<h2><a href="https://drive.google.com/drive/folders/1cJqAYLdlQj05o92n9u1eAat03KCEDiDi?usp=sharing" target="_blank">drive de la materia</a></h2>
@@ -19,21 +82,23 @@
 			<li>ppts de teoría 2025</li>
 			<li>taller de estudio 2025</li>
 			<li>apuntes de parciales</li>
-			<li>apuntes del final (general, por unidad,<br>preguntas, modelos, etc)</li>
+			<li>apuntes del final (general, por unidad, preguntas, modelos, etc)</li>
 			<li>recursos extra</li>
 		</ul>
 	</div>
-	<br>
 
-	<iframe src="https://drive.google.com/file/d/16qXthLCSJWqjXwB4QFRJiuVvsMnLUQdR/preview" width="50%" height="800px"></iframe>
+	<div class="drive-wrapper">
+		<iframe src="https://drive.google.com/file/d/16qXthLCSJWqjXwB4QFRJiuVvsMnLUQdR/preview" allowfullscreen></iframe>
+	</div>
 
 	<h2>sobre los apuntes</h2>
 
 	<p>la mayoría del material está hecho en base a Chang y Whitten!</p>
-	<p>aunque estoy bastante feliz con mis apuntes, recomiendo leer el Chang primero y después usar los apuntes para reforzar o resumir conceptos</p>
+	<p>aunque estoy bastante feliz con mis apuntes, recomiendo leer el Chang primero y después usar los apuntes para reforzar o resumir conceptos.</p>
 
 	<h2>recursos</h2>
-	<p><b>canales de youtube:</b></p>
+
+	<span class="section-label">canales de youtube</span>
 	<ul>
 		<li><a href="https://www.youtube.com/@tdewitt451" target="_blank">tyler dewitt</a> — en inglés</li>
 		<li><a href="https://www.youtube.com/@TheOrganicChemistryTutor" target="_blank">the organic chemistry tutor</a> — en inglés</li>
@@ -46,7 +111,7 @@
 		<li><a href="https://www.youtube.com/@RicardoJara277" target="_blank">ricardo jara</a> — ejercicios de estequiometría</li>
 	</ul>
 
-	<p><b>videos específicos:</b></p>
+	<span class="section-label">videos específicos</span>
 	<ul>
 		<li><a href="https://www.youtube.com/watch?v=7b34XYgADlM" target="_blank">celdas galvánicas y redox</a></li>
 		<li><a href="https://youtu.be/dRtSjJCKkIo?si=M7mDJb8G6rDFy5ye" target="_blank">celdas electrolíticas y redox</a></li>
@@ -54,14 +119,18 @@
 	<p>los dos están en inglés, pero se entiende bien viendo los dibujos y esquemas.</p>
 
 	<h2>tips para el final</h2>
-	<ul>
-		<li>practica exposición oral! si bien los profes te ayudan, lo ideal sería que vos puedas desenvolverte solo (llamá a un amigo; estudien juntos, explicale a tu mascota, todo ayuda)</li>
-		<li>practica cálculos estequiométricos, tomá tu tiempo mientras los haces. te dan una hora para resolver 6-8 ejercicios, no son nada que no hayan hecho todo el cuatri en los labs</li>
-		<li>dormí bien !!! si querés estudiar antes de ir a rendir conviene más dormir temprano y despertarte a la madrugada a estudiar. todos se dan cuenta que trasnochaste no hagas eso</li>
+
+	<ul class="tip-list">
+		<li>practica exposición oral! si bien los profes te ayudan, lo ideal sería que vos puedas desenvolverte solo — llamá a un amigo, estudien juntos, explicale a tu mascota, todo ayuda.</li>
+		<li>practica cálculos estequiométricos, tomá tu tiempo mientras los haces. te dan una hora para resolver 6-8 ejercicios, no son nada que no hayan hecho todo el cuatri en los labs.</li>
+		<li>dormí bien! si querés estudiar antes de ir a rendir, conviene más dormir temprano y despertarte a la madrugada. todos se dan cuenta que trasnochaste, no hagas eso.</li>
 	</ul>
-	<br>
-	
-	<img src="../images/moses.jpg">
+
+	<img class="footer-img" src="../images/moses.jpg" alt="">
+
+	<p>EDIT 11/06</p>
+	<p>se puede resumir más, hacer un resumen del resumen. hay muchos temas y explicaciones que divago mucho y ni siquiera las preguntan, por ej. en gases, mientras sepas explicar las leyes está bien, el resto lo podes resumir a menos de una hoja y ta. para pensar</p>
+
 
 </body>
 </html>
