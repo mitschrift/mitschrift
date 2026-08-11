@@ -7,9 +7,12 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+	<button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open'); document.querySelector('.backdrop').classList.toggle('show');">☰</button>
+	<div class="backdrop" onclick="document.querySelector('.sidebar').classList.remove('open'); this.classList.remove('show');"></div>
+
 	<div class="sidebar">
 		<div class="title">mitschrift</div>
-		<div class="subtitle">apuntes y divagación</div>
+		<div class="subtitle">apuntes y otros</div>
 
 		<img src="images/me.jpg" alt="foto de perfil">
 
@@ -27,7 +30,7 @@
 			<a href="materias/general.html" target="content">química general</a>
 			<a href="materias/introduccion.html" target="content">introducción a cs. farmaceuticas</a>
 			<a href="materias/matei.html" target="content">matemática i (cálculo)</a>
-			<s><a href="home.html" target="content">inorgánica</a></s>
+			<a href="materias/inorganica.html" target="content">inorgánica</a>
 			<a href="materias/mateii.html" target="content">matemática ii (álgebra)</a>
 			<s><a href="home.html" target="content">física</a></s>
 			<s><a href="home.html" target="content">biología general</a></s>
@@ -42,5 +45,14 @@
 	<div class="main">
 		<iframe src="home.html" name="content"></iframe>
 	</div>
+
+	<script>
+	document.querySelectorAll('.sidebar a').forEach(function (link) {
+		link.addEventListener('click', function () {
+			document.querySelector('.sidebar').classList.remove('open');
+			document.querySelector('.backdrop').classList.remove('show');
+		});
+	});
+</script>
 </body>
 </html>
