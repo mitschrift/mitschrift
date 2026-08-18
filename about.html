@@ -1,27 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-	<title></title>
+	<title>sobre mí</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=0.1">
-</head>
-<body class="page">
-	<h1>Sobre mi</h1>
-	<p>si encontraste esta pagina por mi instagram, ya me conoces! si te la pasaron, bienvenidis</p>
-	<p>me gusta editar páginas y descubrir blogs del internet indie. aprendí a programar en el secundario y, aunque tengo título de técnico informático, apenas sé escribir páginas simples, como esta.</p>
-		
-	<p>me gusta snoopy y los dibujitos en general</p>
-	
-	<p>soy de chaco, como lilita</p>
-	<img src="images/lili.jpg" style="width: 50%;">
-	<br>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		.bio-photo {
+			float: right;
+			margin: 0 0 14px 20px;
+			border: 1px solid var(--border);
+		}
 
-	<div class="statusbox">
-		<p><b>leyendo:</b> demasiado lejos — sacheri</p>
-		<p><b>escuchando:</b> love story — taylor swift</p>
-		<p><b>jugando:</b> sims 2</p>
-		<p><b>avance de carrera:</b> 12.4%</p>
+		.faq {
+			max-width: 560px;
+			margin: 0.5rem 0 1.5rem;
+		}
+
+		.faq > div {
+			border-bottom: 1px solid var(--border);
+			padding: 10px 0;
+		}
+
+		.faq dt {
+			font-size: 11.5px;
+			color: var(--ink);
+		}
+
+		.faq dt::before {
+			content: "+ ";
+			color: var(--accent);
+		}
+
+		.faq dd {
+			font-size: 11px;
+			color: var(--ink-mid);
+			margin: 8px 0 0;
+			padding-left: 14px;
+		}
+	</style>
+</head>
+
+<body class="page">
+
+	<h1>sobre mí</h1>
+
+	<img class="bio-photo" style="width: 160px;" src="images/lili.jpg" alt="foto">
+
+	<p>si encontraste esta página por mi instagram, ya me conocés! si te la pasaron, bienvenidis.</p>
+
+	<p>me gusta editar páginas y descubrir blogs del internet indie. aprendí a programar en el secundario y aunque tengo título de técnico informático apenas sé escribir páginas simples, como esta.</p>
+
+	<p>me gusta snoopy y los dibujitos en general. soy de chaco.</p>
+
+	<p>a futuro me gustaría meterme más al mundo del laboratorio y la industria, todavía no sé bien en qué área, pero es lo que más me atrae hasta ahora.</p>
+
+	<h2>preguntas frecuentes</h2>
+	<dl class="faq">
+	<div>
+		<dt>¿de quién es esta página?</dt>
+		<dd>mía. la hice yo, subo los apuntes yo, todo desde mi net.</dd>
 	</div>
+
+	<div>
+		<dt>¿dónde haces los apuntes?</dt>
+		<dd>microsoft word. hay tutoriales en reels, pinterest, tiktok, etc.</dd>
+	</div>
+
+	<div>
+		<dt>¿usás ia para estudiar?</dt>
+		<dd>a veces. no estoy a favor de usarla para estudiar, pero reconozco que en momentos desesperados se usa igual. trato de no abusar.</dd>
+	</div>
+
+	<div>
+		<dt>¿por qué hay materias tachadas?</dt>
+		<dd>todavía no las rendí y no tienen apuntes subidos. las voy agregando a medida que las curso.</dd>
+	</div>
+	
+	<div>
+		<dt>¿puedo pasarte mis apuntes?</dt>
+		<dd>sí sí, mandame un correo, mirá la página de inicio para el mail.</dd>
+	</div>
+
+	
+</dl>
+
+	<h2>ahora mismo</h2>
+	<div class="statusbox">
+		<p><b>leyendo</b> orgullo y prejuicio</p>
+		<p><b>escuchando</b> negra murguera</p>
+		<p><b>jugando</b> sims 2</p>
+		<p><b>avance de carrera</b> 15.63%</p>
+	</div>
+
+	
 
 </body>
 </html>

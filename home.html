@@ -16,39 +16,73 @@
 			margin-bottom: 10px;
 		}
 
+		
+		.greeting {
+			font-family: "IM Fell English", serif;
+			font-size: 20px;
+			color: var(--ink);
+			margin-bottom: 14px;
+		}
+
 		.intro-text {
 			font-size: 11.5px;
 			color: var(--ink-mid);
 			line-height: 1.95;
-			max-width: 540px;
 			margin-bottom: 0.8em;
 		}
 
-		.contact-box {
-			border: 1px solid var(--border);
-			border-left: 2px solid var(--accent);
-			background: rgba(255,255,255,0.3);
-			padding: 10px 14px;
-			font-size: 10.5px;
+		.margin-note b {
+			font-style: normal;
+			color: var(--ink);
+			font-family: "IM Fell English", serif;
+			font-size: 12px;
+		}
+
+		.divider {
+			clear: both;
+			border: none;
+			border-top: 1px dashed var(--border);
+			margin: 2rem 0;
+			width: 100%;
+		}
+
+		.contact-line {
+			font-size: 11px;
 			color: var(--ink-mid);
-			line-height: 2;
-			margin: 1.4rem 0;
-			max-width: 480px;
+			line-height: 2.1;
 		}
 
-		.contact-box span {
-			font-size: 8.5px;
-			text-transform: uppercase;
-			letter-spacing: 1.5px;
+		.contact-line span {
 			color: var(--ink-light);
-			display: block;
-			margin-bottom: 6px;
+			font-style: italic;
 		}
 
-		.footer-img {
+		.howto-list {
+			list-style: none;
+			padding: 0;
+			margin: 0.8rem 0 1.2rem;
+		}
+
+		.howto-list li {
+			display: flex;
+			gap: 10px;
+			font-size: 11.5px;
+			color: var(--ink-mid);
+			line-height: 1.85;
+			margin-bottom: 12px;
+		}
+
+		.howto-list b {
+			font-family: "IM Fell English", serif;
+			font-size: 15px;
+			color: var(--accent);
+			flex-shrink: 0;
+			width: 18px;
+		}
+
+		.footerr {
 			display: block;
 			max-width: 320px;
-			border: 1px solid var(--border);
 			margin-top: 1.8rem;
 		}
 
@@ -64,6 +98,7 @@
 			margin-bottom: 2rem;
 			opacity: 0.8;
 		}
+
 	</style>
 </head>
 
@@ -72,25 +107,34 @@
 	<span class="entry-date">26. März 2026</span>
 	<h1>bienvenido/a</h1>
 
-	<p class="intro-text">holi! esta página la hice para guardar y compartir mis apuntes, resúmenes y otras cosas de la facultad en un solo lugar. todos (o casi todos) los apuntes los hago mientras curso y rindo las materias, así que pueden tener errores, pero intento corregirlos</p>
+	<p class="greeting">holi! gracias por pasar por acá</p>
 
-	<p class="intro-text">las imágenes no me pertenecen (excepto la foto de la perrita al costado!) y las fui encontrando en chats, apuntes viejos y otras páginas.</p>
+	<p class="intro-text">esta página la hice para ordenar mis apuntes y otras cosas de la facultad en un solo lugar.</p>
+	
+	<p> todos (o casi todos) los apuntes los hago mientras curso, así que pueden tener errores, pero intento corregirlos a medida que los encuentro.</p>
 
-	<div class="contact-box">
-		<span>contacto</span>
-		"mi apunte está acá y quiero que lo saques aaaa", mandame un <a href="mailto:californuim961@gmail.com">correo</a><br>
-		"tengo apuntes para aportar", <a href="mailto:californuim961@gmail.com">correo</a>
-	</div>
+	<p class="intro-text">las imágenes no me pertenecen y las fui encontrando en chats, apuntes viejos y otras páginas. la única excepción es la foto de la perrita de al lado.</p>
+
+	<hr class="divider">
+
+	<p class="contact-line">
+		<span>"mi apunte está acá y quiero que lo saques aaaa"</span> — mandame un <a href="mailto:californuim961@gmail.com">correo</a><br>
+		<span>"tengo apuntes para aportar"</span> — también por <a href="mailto:californuim961@gmail.com">correo</a>
+	</p>
+
+	<hr class="divider">
 
 	<h2>cómo usar la página</h2>
 
-	<p class="intro-text">a la izquierda encontrás la lista de materias. clickeá cualquiera para ver sus apuntes, recursos y tips. los que están tachados todavía no tienen página (los voy subiendo a medida que rindo) </p>
+	<ul class="howto-list">
+		<li><b>→</b> a la izquierda encontrás la lista de materias. clickeá cualquiera para ver sus apuntes, recursos y tips. los que están tachados todavía no tienen página (los voy subiendo a medida que rindo)</li>
+		<li><b>→</b> cada materia tiene un drive con todos los archivos y una guía por si buscás algo en particular</li>
+		<li><b>→</b> si estás en el celu puede verse raro, la página la hice pensando en (mi) compu</li>
+	</ul>
 
-	<p class="intro-text">cada materia tiene un drive con todos los archivos y una guía por si buscás algo en particular. si estás en el celu puede verse rara porque las hice en y para compu.</p>
+	<p>espero que te sirva como a mí</p>
 
-	<p class="intro-text">espero que te sirva tanto como a mí!</p>
-
-	<img class="footer-img" src="images/study.jpg" alt="">
+	<img class="footerr" src="images/study.jpg" alt="">
 
 </body>
 </html>
