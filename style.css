@@ -50,9 +50,10 @@ a:hover {
 	text-underline-offset: 3px;
 }
 
+
 .sidebar {
 	width: 190px;
-	min-height: 100vh;
+	height: 100vh;  
 	border-right: 1px solid var(--border);
 	padding: 2rem 1.5rem;
 	position: fixed;
@@ -62,6 +63,16 @@ a:hover {
 	overflow-x: hidden;
 	background-color: var(--paper);
 }
+
+.sidebar {
+	scrollbar-width: none;      
+	-ms-overflow-style: none;    
+}
+
+.sidebar::-webkit-scrollbar {
+	display: none;               
+}
+
 
 .title {
 	font-family: "IM Fell English", serif;
